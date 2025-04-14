@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Upload - Aquafina Tools</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #ff5722;
+    }
+
+    .upload-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    label.upload-btn {
+      display: inline-block;
+      background-color: #ff5722;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    label.upload-btn:hover {
+      background-color: #e64a19;
+    }
+
+    .note {
+      margin-top: 15px;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="upload-box">
+    <h1>Choose Your File</h1>
+    <form id="uploadForm">
+      <input type="file" id="fileInput" accept=".xlsx,.xls,.csv" />
+      <label for="fileInput" class="upload-btn">Upload File</label>
+      <div class="note">Only .xlsx, .xls, and .csv files are allowed.</div>
+    </form>
+  </div>
+</body>
+</html>
